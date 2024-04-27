@@ -275,8 +275,6 @@ https://t.me/c/xxxx/101 - 120
 **__note that space in between doesn't matter__**
 """
 
-**__love From SHIMPERED__**
-
 
 # infinty polling
 bot.run()
