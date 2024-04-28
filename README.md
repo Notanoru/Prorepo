@@ -49,5 +49,5 @@ _note that space in between doesn't matter_
 
 ### Credits
 
-- [Shimperd]-(https://telegram.dog/Shimperd_bot)
+- [Shimperd]_(https://telegram.dog/Shimperd_bot)
   
