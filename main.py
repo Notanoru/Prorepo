@@ -142,6 +142,23 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 			# wait time
 			time.sleep(3)
 
+                        # thumbnail
+                        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+                        x = await conv.get_reply()
+                        if not x.media:
+                           xx.edit("No media found.")
+                        mime = x.file.mime_type
+                          if not 'png' in mime:
+            if not 'jpg' in mime:
+                if not 'jpeg' in mime:
+                    return await xx.edit("No image found.")
+        await xx.delete()
+        t = await event.client.send_message(event.chat_id, 'Trying.')
+        path = await event.client.download_media(x.media)
+        if os.path.exists(f'{event.sender_id}.jpg'):
+            os.remove(f'{event.sender_id}.jpg')
+        os.rename(path, f'./{event.sender_id}.jpg')
+        await t.edit("Temporary thumbnail saved!"
 
 # handle private
 def handle_private(message: pyrogram.types.messages_and_media.message.Message, chatid: int, msgid: int):
