@@ -34,7 +34,7 @@ _send link with '/b/', bot's username and message id, you might want to install 
 https://t.me/b/botusername/4321
 ```
 
-_MULTI POSTS_
+__MULTI POSTS__
 
 _send public/private posts link as explained above with formate "from - to" to send multiple messages like below_
 
